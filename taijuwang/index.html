@@ -1,0 +1,1001 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>泰剧网-泰剧在线观看_泰剧推荐_泰剧TV大全</title>
+  <meta name="description" content="泰剧网是一个专注泰国电视剧的内容专题站，提供泰剧在线观看参考、热门泰剧推荐、泰剧TV更新动态、新剧资讯与剧迷讨论，帮助你快速找到想看的泰剧，了解泰剧题材、演员与追剧节奏，收藏页面即可持续追更。">
+  <meta name="keywords" content="泰剧网,泰剧在线观看,泰剧推荐,泰剧TV,泰国电视剧">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📺</text></svg>">
+  <style>
+    :root{
+      --bg:#fbf7f0;
+      --bg-soft:#fffdf9;
+      --card:#ffffff;
+      --text:#2b2622;
+      --text-light:#746b63;
+      --line:#efe6db;
+      --accent:#c96f4a;
+      --accent-soft:#f7e4d8;
+      --accent-deep:#a14e2e;
+      --gold:#d8a15e;
+      --shadow:0 10px 30px rgba(80,50,30,.07);
+      --radius:18px;
+      --max:1200px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+      background:
+        radial-gradient(1200px 600px at 85% -5%,#f8e9db 0%,transparent 60%),
+        radial-gradient(900px 500px at -10% 30%,#fdf3e9 0%,transparent 55%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.75;
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:var(--max);margin:0 auto;padding:0 20px}
+    .section{margin-top:54px}
+    .section:first-of-type{margin-top:0}
+    .sec-head{
+      display:flex;align-items:flex-end;justify-content:space-between;gap:16px;
+      margin-bottom:22px;flex-wrap:wrap;
+    }
+    .sec-head h2{
+      font-size:clamp(20px,2.4vw,27px);
+      letter-spacing:-.02em;
+      display:flex;align-items:center;gap:10px;
+    }
+    .sec-head h2::before{
+      content:"";width:6px;height:24px;border-radius:4px;
+      background:linear-gradient(180deg,var(--accent),var(--gold));
+    }
+    .sec-head .sub{color:var(--text-light);font-size:13.5px}
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;
+      background:var(--accent);color:#fff;border:none;cursor:pointer;
+      padding:10px 20px;border-radius:999px;font-size:14px;font-weight:600;
+      transition:transform .2s ease,box-shadow .2s ease,background .2s ease;
+      box-shadow:0 6px 16px rgba(201,111,74,.28);
+    }
+    .btn:hover{transform:translateY(-2px);background:var(--accent-deep)}
+    .btn-ghost{
+      background:transparent;color:var(--accent-deep);
+      border:1.5px solid var(--accent);box-shadow:none;
+    }
+    .btn-ghost:hover{background:var(--accent-soft);color:var(--accent-deep)}
+    .tag{
+      display:inline-block;font-size:12px;padding:3px 10px;border-radius:999px;
+      background:var(--accent-soft);color:var(--accent-deep);font-weight:600;
+    }
+    .tag.gold{background:#f7ecd9;color:#9a6a1f}
+    .tag.dark{background:#2b2622;color:#f3e7db}
+
+    /* ---------- 顶部导航 ---------- */
+    .nav-wrap{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter:blur(14px);
+      background:rgba(251,247,240,.82);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;
+      gap:18px;height:66px;
+    }
+    .logo{
+      display:flex;align-items:center;gap:10px;font-weight:800;
+      font-size:20px;letter-spacing:-.02em;white-space:nowrap;
+    }
+    .logo-mark{
+      width:36px;height:36px;border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),var(--gold));
+      display:grid;place-items:center;color:#fff;font-size:18px;
+      box-shadow:0 6px 14px rgba(201,111,74,.3);
+    }
+    .logo small{
+      display:block;font-size:10px;font-weight:600;color:var(--text-light);
+      letter-spacing:.14em;line-height:1;margin-top:2px;
+    }
+    .nav-links{
+      display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;
+      flex:1;justify-content:center;
+    }
+    .nav-links::-webkit-scrollbar{display:none}
+    .nav-links a{
+      font-size:14px;color:#5a5149;padding:8px 13px;border-radius:10px;
+      white-space:nowrap;transition:.2s;
+    }
+    .nav-links a:hover{background:var(--accent-soft);color:var(--accent-deep)}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    .nav-search{
+      display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);
+      border-radius:999px;padding:7px 14px;min-width:180px;
+    }
+    .nav-search input{
+      border:none;outline:none;background:transparent;font-size:13px;width:100%;
+      color:var(--text);
+    }
+    .nav-search svg{width:16px;height:16px;stroke:var(--text-light);fill:none;stroke-width:2}
+    .burger{display:none;font-size:22px;background:none;border:none;cursor:pointer;color:var(--text)}
+
+    /* ---------- Banner ---------- */
+    .hero{
+      margin-top:26px;
+      border-radius:28px;
+      background:
+        radial-gradient(600px 300px at 88% 10%,rgba(255,255,255,.65),transparent 60%),
+        linear-gradient(135deg,#fbeee2 0%,#fdf7f0 45%,#f6e4d4 100%);
+      border:1px solid #f0e2d4;
+      box-shadow:var(--shadow);
+      padding:48px 44px 44px;
+      position:relative;
+      overflow:hidden;
+    }
+    .hero::after{
+      content:"";position:absolute;right:-70px;top:-70px;width:300px;height:300px;
+      border-radius:50%;background:radial-gradient(circle,rgba(216,161,94,.18),transparent 70%);
+    }
+    .hero::before{
+      content:"";position:absolute;left:-40px;bottom:-80px;width:260px;height:260px;
+      border-radius:50%;background:radial-gradient(circle,rgba(201,111,74,.12),transparent 70%);
+    }
+    .hero-inner{position:relative;z-index:2;max-width:760px}
+    .hero .eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      background:#fff;border:1px solid #f0dfcf;border-radius:999px;
+      padding:6px 14px;font-size:12.5px;color:var(--accent-deep);font-weight:600;
+      margin-bottom:18px;
+    }
+    .hero .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+    .hero h1{
+      font-size:clamp(32px,4.6vw,52px);
+      line-height:1.16;letter-spacing:-.03em;font-weight:900;
+      margin-bottom:16px;
+    }
+    .hero h1 em{
+      font-style:normal;
+      background:linear-gradient(120deg,var(--accent),var(--gold));
+      -webkit-background-clip:text;background-clip:text;color:transparent;
+    }
+    .hero .lead{
+      font-size:15.5px;color:#5c5148;max-width:620px;margin-bottom:26px;
+    }
+    .hero-search{
+      display:flex;gap:10px;background:#fff;border-radius:999px;
+      padding:8px 8px 8px 20px;max-width:560px;
+      box-shadow:0 12px 30px rgba(120,70,40,.1);border:1px solid #f1e2d3;
+      margin-bottom:26px;flex-wrap:wrap;
+    }
+    .hero-search input{
+      flex:1;border:none;outline:none;font-size:15px;background:transparent;
+      min-width:140px;color:var(--text);
+    }
+    .hero-search input::placeholder{color:#b3a598}
+    .hero-btns{display:flex;flex-wrap:wrap;gap:10px}
+    .hero-btns a{
+      font-size:13.5px;padding:9px 17px;border-radius:999px;
+      background:#fff;border:1px solid #eeddcd;color:#5a4a3c;font-weight:600;
+      transition:.22s;
+    }
+    .hero-btns a:hover{background:var(--accent);border-color:var(--accent);color:#fff;transform:translateY(-2px)}
+    .hero-stats{
+      display:flex;gap:34px;margin-top:32px;flex-wrap:wrap;
+    }
+    .hero-stats div b{font-size:24px;font-weight:800;color:var(--accent-deep)}
+    .hero-stats div span{display:block;font-size:12px;color:var(--text-light)}
+
+    /* ---------- 内容简介 ---------- */
+    .intro{
+      background:var(--card);border-radius:var(--radius);
+      padding:34px 36px;border:1px solid var(--line);
+      box-shadow:var(--shadow);
+      display:grid;grid-template-columns:1fr 300px;gap:40px;
+    }
+    .intro h2{font-size:24px;margin-bottom:16px;letter-spacing:-.02em}
+    .intro p{color:#4c423b;font-size:15px;margin-bottom:14px}
+    .intro p strong{color:var(--accent-deep)}
+    .intro-aside{
+      background:var(--bg-soft);border-radius:14px;padding:22px;
+      border:1px dashed #e8d6c4;
+    }
+    .intro-aside h3{font-size:16px;margin-bottom:12px;color:var(--accent-deep)}
+    .intro-aside ul{list-style:none;font-size:13.5px;color:#5b5048}
+    .intro-aside li{padding:7px 0;border-bottom:1px dashed #eee0d1;display:flex;gap:8px}
+    .intro-aside li:last-child{border-bottom:none}
+    .intro-aside li::before{content:"✦";color:var(--gold)}
+
+    /* ---------- 卡片网格 ---------- */
+    .grid-cards{
+      display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px;
+    }
+    .card{
+      background:var(--card);border-radius:var(--radius);
+      border:1px solid var(--line);overflow:hidden;
+      box-shadow:0 4px 16px rgba(100,70,40,.05);
+      transition:transform .25s ease,box-shadow .25s ease;
+      display:flex;flex-direction:column;
+    }
+    .card:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(100,70,40,.12)}
+    .card-cover{
+      height:132px;position:relative;
+      background:linear-gradient(135deg,#f6e3d1,#f0d3ba);
+      display:flex;align-items:flex-end;padding:14px 16px;
+    }
+    .card-cover.c1{background:linear-gradient(135deg,#f9e0cf,#e7b58f)}
+    .card-cover.c2{background:linear-gradient(135deg,#e6ecdc,#c4d4b0)}
+    .card-cover.c3{background:linear-gradient(135deg,#f8dcdc,#e8b0b0)}
+    .card-cover.c4{background:linear-gradient(135deg,#e0e6f3,#b9c7e6)}
+    .card-cover.c5{background:linear-gradient(135deg,#f3e4c7,#e0c48f)}
+    .card-cover.c6{background:linear-gradient(135deg,#e8dcf3,#c9b4e0)}
+    .card-cover .ep{
+      font-size:11.5px;background:rgba(255,255,255,.75);
+      padding:3px 10px;border-radius:999px;color:#5a4433;font-weight:700;
+      backdrop-filter:blur(4px);
+    }
+    .card-body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+    .card-body h3{font-size:16px;line-height:1.4;margin-bottom:8px;font-weight:700}
+    .card-body h3 a:hover{color:var(--accent-deep)}
+    .card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+    .card-tags span{font-size:11px;padding:2px 8px;border-radius:6px;background:#f6efe7;color:#7c6a5a}
+    .card-body p{font-size:13px;color:#6d6259;line-height:1.65;margin-bottom:12px;flex:1}
+    .card-meta{
+      display:flex;align-items:center;justify-content:space-between;
+      font-size:11.5px;color:#9a8c7e;border-top:1px dashed #f0e6da;padding-top:10px;
+    }
+    .card-meta b{color:var(--accent-deep);font-weight:700}
+
+    /* ---------- 最新更新 ---------- */
+    .update-list{
+      display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;
+    }
+    .up-item{
+      background:var(--card);border:1px solid var(--line);border-radius:14px;
+      padding:15px 18px;display:flex;gap:14px;align-items:flex-start;
+      transition:.2s;
+    }
+    .up-item:hover{border-color:#e3cdb8;background:#fffcf8}
+    .up-time{
+      font-size:11px;font-weight:700;color:var(--accent-deep);
+      background:var(--accent-soft);border-radius:8px;padding:4px 9px;white-space:nowrap;
+    }
+    .up-item h4{font-size:14px;margin-bottom:4px}
+    .up-item p{font-size:12.5px;color:var(--text-light);line-height:1.55}
+
+    /* ---------- 分类入口 ---------- */
+    .cat-grid{
+      display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;
+    }
+    .cat-item{
+      background:var(--card);border:1px solid var(--line);border-radius:14px;
+      padding:18px 16px;text-align:center;transition:.22s;
+      box-shadow:0 3px 12px rgba(100,70,40,.04);
+    }
+    .cat-item:hover{transform:translateY(-4px);border-color:#e5cbb4;background:#fffaf5}
+    .cat-item .ico{font-size:24px;margin-bottom:8px}
+    .cat-item b{display:block;font-size:14px;margin-bottom:3px}
+    .cat-item small{font-size:11.5px;color:var(--text-light)}
+
+    /* ---------- 深度解析 ---------- */
+    .deep{
+      background:var(--card);border-radius:var(--radius);padding:38px 40px;
+      border:1px solid var(--line);box-shadow:var(--shadow);
+    }
+    .deep h2{font-size:26px;margin-bottom:8px;letter-spacing:-.02em}
+    .deep .meta{font-size:12.5px;color:var(--text-light);margin-bottom:22px}
+    .deep h3{font-size:18px;margin:24px 0 10px;color:var(--accent-deep)}
+    .deep p{font-size:15px;color:#463c35;margin-bottom:14px;line-height:1.85}
+    .deep p strong{background:linear-gradient(transparent 62%,#f6dfcb 62%);font-weight:700;padding:0 2px}
+    .deep blockquote{
+      border-left:4px solid var(--gold);background:#fdf8f2;
+      padding:14px 20px;border-radius:0 12px 12px 0;font-size:14px;
+      color:#5c4e43;margin:18px 0;
+    }
+
+    /* ---------- 体验指南 ---------- */
+    .guide{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;
+    }
+    .guide-item{
+      background:var(--card);border:1px solid var(--line);border-radius:16px;
+      padding:24px 22px;transition:.22s;
+    }
+    .guide-item:hover{border-color:#e6cfb9;box-shadow:0 10px 24px rgba(100,70,40,.07)}
+    .guide-item .num{
+      font-size:13px;font-weight:800;color:var(--accent);letter-spacing:.06em;margin-bottom:10px;
+    }
+    .guide-item h3{font-size:16px;margin-bottom:8px}
+    .guide-item p{font-size:13.5px;color:#6a5e54;line-height:1.7}
+
+    /* ---------- FAQ ---------- */
+    .faq-wrap{display:grid;gap:12px}
+    details.faq{
+      background:var(--card);border:1px solid var(--line);border-radius:14px;
+      padding:0 20px;transition:.2s;
+    }
+    details.faq[open]{border-color:#e3cbb4;background:#fffdf9}
+    details.faq summary{
+      list-style:none;cursor:pointer;padding:17px 0;font-size:15px;font-weight:700;
+      display:flex;justify-content:space-between;gap:14px;align-items:center;
+    }
+    details.faq summary::-webkit-details-marker{display:none}
+    details.faq summary::after{
+      content:"+";font-size:20px;color:var(--accent);font-weight:400;line-height:1;transition:.2s;
+    }
+    details.faq[open] summary::after{transform:rotate(45deg)}
+    details.faq .ans{
+      padding:0 0 18px;font-size:14px;color:#5b4f45;line-height:1.8;
+      border-top:1px dashed #f0e2d4;margin-top:-2px;padding-top:14px;
+    }
+
+    /* ---------- 评论 ---------- */
+    .comments{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+    .cmt{
+      background:var(--card);border:1px solid var(--line);border-radius:14px;
+      padding:16px 18px;transition:.2s;
+    }
+    .cmt:hover{border-color:#ecd9c6}
+    .cmt-head{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+    .avatar{
+      width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+      font-size:13px;font-weight:800;color:#fff;flex-shrink:0;
+    }
+    .cmt-head .name{font-size:13.5px;font-weight:700}
+    .cmt-head .date{font-size:11px;color:#a99b8d;margin-left:auto}
+    .cmt p{font-size:13px;color:#5c5047;line-height:1.7}
+    .stars{color:var(--gold);font-size:12px;letter-spacing:1px}
+
+    /* ---------- 资讯 ---------- */
+    .news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+    .news-card{
+      background:var(--card);border:1px solid var(--line);border-radius:16px;
+      padding:20px 22px;transition:.22s;display:flex;flex-direction:column;
+    }
+    .news-card:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(100,70,40,.09)}
+    .news-card .date{font-size:11.5px;color:var(--accent-deep);font-weight:700;margin-bottom:8px}
+    .news-card h3{font-size:15.5px;line-height:1.5;margin-bottom:8px}
+    .news-card p{font-size:13px;color:#6a5e54;line-height:1.7;flex:1}
+
+    /* ---------- 页脚 ---------- */
+    footer{
+      margin-top:64px;background:#2b2622;color:#d8cec4;
+      border-radius:28px 28px 0 0;padding:44px 0 26px;
+    }
+    .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
+    .foot-grid h4{font-size:14px;color:#fff;margin-bottom:14px;letter-spacing:.04em}
+    .foot-grid a{display:block;font-size:13px;color:#b8aca0;padding:5px 0;transition:.2s}
+    .foot-grid a:hover{color:var(--gold)}
+    .foot-brand p{font-size:13px;color:#a99d91;line-height:1.8;margin-top:12px;max-width:300px}
+    .foot-bottom{
+      margin-top:34px;padding-top:20px;border-top:1px solid #3d3732;
+      display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+      font-size:12px;color:#94887c;
+    }
+
+    @media (max-width:900px){
+      .intro{grid-template-columns:1fr;gap:24px}
+      .hero{padding:36px 26px}
+      .foot-grid{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:720px){
+      .nav-links{display:none}
+      .burger{display:block}
+      .nav-search{display:none}
+      .hero-stats{gap:20px}
+      .hero-stats div b{font-size:20px}
+      .deep{padding:26px 22px}
+      .intro{padding:26px 22px}
+      .foot-grid{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:480px){
+      .foot-grid{grid-template-columns:1fr}
+      .hero h1{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============ 顶部导航 ============ -->
+<div class="nav-wrap">
+  <nav class="nav container" aria-label="主导航">
+    <a href="/#top" class="logo">
+      <span class="logo-mark">泰</span>
+      <span>泰剧网<small>THAI DRAMA HUB</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="/#hot">热门推荐</a>
+      <a href="/#latest">最新更新</a>
+      <a href="/#cats">分类入口</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">剧迷评论</a>
+      <a href="/#news">相关资讯</a>
+    </div>
+    <div class="nav-right">
+      <div class="nav-search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" placeholder="搜索泰剧 / 演员 / 题材" aria-label="搜索泰剧">
+      </div>
+      <button class="burger" aria-label="菜单">☰</button>
+    </div>
+  </nav>
+</div>
+
+<main class="container" id="top">
+
+  <!-- ============ 首屏 Banner ============ -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-inner">
+      <span class="eyebrow"><span class="dot"></span> 2026 泰剧专题 · 每周更新</span>
+      <h1 id="hero-title">泰剧网 · <em>追泰剧</em> 的专题内容站</h1>
+      <p class="lead">从热门泰剧推荐到新剧上线动态，从演员阵容到题材解析，泰剧网帮你把“想看什么、从哪部开始、值不值得追”一次讲清楚。</p>
+      <div class="hero-search">
+        <input type="search" placeholder="输入剧名或演员，例如：天生一对、Gulf" aria-label="搜索泰剧内容">
+        <button class="btn" type="button">搜索</button>
+      </div>
+      <div class="hero-btns">
+        <a href="/#hot">🔥 热门泰剧榜</a>
+        <a href="/#latest">🆕 今日更新</a>
+        <a href="/#cats">🎭 题材分类</a>
+        <a href="/#deep">📖 深度解析</a>
+        <a href="/#faq">❓ 追剧问答</a>
+        <a href="/#comments">💬 剧迷讨论</a>
+        <a href="/#news">📰 泰剧资讯</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>380+</b><span>收录泰剧条目</span></div>
+        <div><b>62</b><span>本周更新剧集</span></div>
+        <div><b>11.6万</b><span>剧迷累计讨论</span></div>
+        <div><b>2026.11.07</b><span>最近更新日期</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 内容简介 ============ -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="intro">
+      <div>
+        <h2 id="about-title">泰剧网是做什么的？给追泰剧的人一个清晰入口</h2>
+        <p><strong>泰剧网</strong>围绕泰国电视剧的内容消费需求展开，面向喜欢泰剧、想了解泰剧、或者刚开始接触泰国电视剧的观众。页面把热门泰剧、最新更新、题材分类、演员看点、深度解析和剧迷评论集中呈现，让你不必在多个平台之间来回跳转，就能判断一部剧的题材、节奏和看点。</p>
+        <p>泰国电视剧的题材跨度很大：有甜宠爱情、豪门恩怨、校园青春、悬疑复仇，也有近年流行的BL剧和家庭伦理剧。很多剧迷第一次接触泰剧时，最常问的是“从哪部开始看”“这部剧是什么类型”“更新到第几集了”。<strong>泰剧网</strong>把这些高频问题拆解成可浏览的模块，方便你按分类、按热度、按更新时间快速筛选。</p>
+        <p>页面内容以编辑推荐和剧迷讨论为主，既有对剧情走向和人物关系的分析，也有对演员阵容、播出平台和更新节奏的整理。如果你习惯先看评价再决定追不追，这里的热门推荐、评论和FAQ能提供比较直观的参考。收藏<strong>泰剧网</strong>，后续有新的泰剧上线或剧集更新时，可以回来看看最新动态。</p>
+      </div>
+      <aside class="intro-aside">
+        <h3>页面适合谁</h3>
+        <ul>
+          <li>刚入坑泰剧、需要入门列表的新观众</li>
+          <li>追更中、想确认更新进度的老剧迷</li>
+          <li>喜欢先看题材解析再决定追剧的人</li>
+          <li>想找同类泰剧推荐和演员作品的观众</li>
+          <li>需要快速了解泰剧热度的内容创作者</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ 热门内容推荐 ============ -->
+  <section class="section" id="hot" aria-labelledby="hot-title">
+    <div class="sec-head">
+      <h2 id="hot-title">热门泰剧推荐</h2>
+      <span class="sub">编辑精选 · 近期讨论度靠前的泰剧</span>
+    </div>
+    <div class="grid-cards">
+
+      <article class="card">
+        <div class="card-cover c1"><span class="ep">更新至 EP12</span></div>
+        <div class="card-body">
+          <h3><a href="/#hot">《曼谷雨季》</a></h3>
+          <div class="card-tags"><span>都市爱情</span><span>虐恋</span><span>豪门</span></div>
+          <p>雨季背景下的家族联姻故事，男女主从互相试探到彼此救赎，情绪张力足，适合喜欢慢热虐恋的观众。</p>
+          <div class="card-meta"><span>热度 <b>9.4</b></span><span>更新中</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c2"><span class="ep">全16集</span></div>
+        <div class="card-body">
+          <h3><a href="/#hot">《清迈来信》</a></h3>
+          <div class="card-tags"><span>治愈</span><span>青春</span><span>慢节奏</span></div>
+          <p>以清迈小镇为舞台的青春群像剧，节奏舒缓、画面干净，适合下班后放松看，评论区口碑很稳。</p>
+          <div class="card-meta"><span>评分 <b>8.9</b></span><span>已完结</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c3"><span class="ep">更新至 EP08</span></div>
+        <div class="card-body">
+          <h3><a href="/#hot">《暗室之光》</a></h3>
+          <div class="card-tags"><span>悬疑</span><span>复仇</span><span>反转</span></div>
+          <p>围绕一桩旧案展开的悬疑剧，前几集铺垫较多，中段开始密集反转，适合喜欢推理向泰剧的观众。</p>
+          <div class="card-meta"><span>热度 <b>9.1</b></span><span>更新中</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c4"><span class="ep">全12集</span></div>
+        <div class="card-body">
+          <h3><a href="/#hot">《学长的心事》</a></h3>
+          <div class="card-tags"><span>校园</span><span>BL</span><span>甜剧</span></div>
+          <p>校园背景的轻甜剧，主线明确、配角出彩，适合喜欢轻松向BL剧的观众，每集时长友好。</p>
+          <div class="card-meta"><span>评分 <b>8.7</b></span><span>已完结</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c5"><span class="ep">更新至 EP05</span></div>
+        <div class="card-body">
+          <h3><a href="/#hot">《金链》</a></h3>
+          <div class="card-tags"><span>家族</span><span>权谋</span><span>年代</span></div>
+          <p>年代家族剧，围绕珠宝商家族的继承之争展开，人物关系复杂，适合喜欢群像和权谋线的观众。</p>
+          <div class="card-meta"><span>热度 <b>8.8</b></span><span>更新中</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c6"><span class="ep">全14集</span></div>
+        <div class="card-body">
+          <h3><a href="/#hot">《她的第二人生》</a></h3>
+          <div class="card-tags"><span>女性成长</span><span>职场</span><span>励志</span></div>
+          <p>女主从家庭主妇重返职场的成长线，节奏明快，讨论了不少现实议题，适合喜欢现实题材的观众。</p>
+          <div class="card-meta"><span>评分 <b>9.0</b></span><span>已完结</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c1"><span class="ep">更新至 EP10</span></div>
+        <div class="card-body">
+          <h3><a href="/#hot">《海风不眠》</a></h3>
+          <div class="card-tags"><span>海边</span><span>治愈</span><span>群像</span></div>
+          <p>海边民宿背景的群像剧，几个年轻人各自带着心事相遇，画面和配乐是加分项，适合慢节奏观众。</p>
+          <div class="card-meta"><span>热度 <b>8.6</b></span><span>更新中</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c2"><span class="ep">全20集</span></div>
+        <div class="card-body">
+          <h3><a href="/#hot">《旧城谜案》</a></h3>
+          <div class="card-tags"><span>刑侦</span><span>推理</span><span>单元剧</span></div>
+          <p>单元式刑侦剧，每两集一个案件，主线暗线并行，适合喜欢边看边猜的观众，信息密度较高。</p>
+          <div class="card-meta"><span>评分 <b>8.5</b></span><span>已完结</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c3"><span class="ep">更新至 EP06</span></div>
+        <div class="card-body">
+          <h3><a href="/#hot">《花期未晚》</a></h3>
+          <div class="card-tags"><span>爱情</span><span>重逢</span><span>轻虐</span></div>
+          <p>初恋重逢题材，时间线在现在与过去之间切换，情绪细腻，适合喜欢文艺向爱情剧的观众。</p>
+          <div class="card-meta"><span>热度 <b>8.4</b></span><span>更新中</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c4"><span class="ep">全10集</span></div>
+        <div class="card-body">
+          <h3><a href="/#hot">《夜班便利店》</a></h3>
+          <div class="card-tags"><span>日常</span><span>温情</span><span>短剧</span></div>
+          <p>以便利店为舞台的短篇合集，每集一个客人故事，单集时长短，通勤路上看很轻松。</p>
+          <div class="card-meta"><span>评分 <b>8.3</b></span><span>已完结</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c5"><span class="ep">更新至 EP03</span></div>
+        <div class="card-body">
+          <h3><a href="/#hot">《双面继承人》</a></h3>
+          <div class="card-tags"><span>豪门</span><span>双胞胎</span><span>狗血</span></div>
+          <p>双胞胎身份互换的老梗新拍，节奏快、冲突密集，适合喜欢看豪门狗血剧放松的观众。</p>
+          <div class="card-meta"><span>热度 <b>8.2</b></span><span>更新中</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover c6"><span class="ep">全18集</span></div>
+        <div class="card-body">
+          <h3><a href="/#hot">《医生说》</a></h3>
+          <div class="card-tags"><span>医疗</span><span>职场</span><span>群像</span></div>
+          <p>医疗职场群像剧，病例线与人物成长线并重，专业细节不算硬核但情感表达扎实。</p>
+          <div class="card-meta"><span>评分 <b>8.6</b></span><span>已完结</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ 最新更新 ============ -->
+  <section class="section" id="latest" aria-labelledby="latest-title">
+    <div class="sec-head">
+      <h2 id="latest-title">最新更新与热播动态</h2>
+      <span class="sub">2026年11月7日 · 泰剧网更新记录</span>
+    </div>
+    <div class="update-list">
+      <div class="up-item"><span class="up-time">今天 20:00</span><div><h4>《曼谷雨季》EP12 上线</h4><p>主线进入家族对峙阶段，男女主关系出现关键转折。</p></div></div>
+      <div class="up-item"><span class="up-time">今天 18:30</span><div><h4>《暗室之光》EP08 更新</h4><p>旧案线索开始收束，新角色出场信息量较大。</p></div></div>
+      <div class="up-item"><span class="up-time">今天 15:00</span><div><h4>《金链》EP05 更新</h4><p>继承权之争升级，家族内部矛盾进一步公开化。</p></div></div>
+      <div class="up-item"><span class="up-time">今天 12:00</span><div><h4>《海风不眠》EP10 更新</h4><p>民宿群像线收束，配角故事迎来阶段性结局。</p></div></div>
+      <div class="up-item"><span class="up-time">今天 10:00</span><div><h4>《花期未晚》EP06 更新</h4><p>过去时间线补充了两人分开的原因，评论区讨论度上升。</p></div></div>
+      <div class="up-item"><span class="up-time">昨天 21:00</span><div><h4>《双面继承人》EP03 上线</h4><p>双胞胎身份互换后首次正面冲突，节奏明显加快。</p></div></div>
+      <div class="up-item"><span class="up-time">昨天 19:00</span><div><h4>新剧《潮汐之间》官宣</h4><p>都市悬疑题材，主演阵容公开，预计下月上线。</p></div></div>
+      <div class="up-item"><span class="up-time">11月5日</span><div><h4>《清迈来信》全集完结</h4><p>大结局走温情路线，剧迷评价整体偏正面。</p></div></div>
+      <div class="up-item"><span class="up-time">11月4日</span><div><h4>《旧城谜案》单元回顾</h4><p>泰剧网整理全剧案件时间线，方便二刷观众对照。</p></div></div>
+      <div class="up-item"><span class="up-time">11月3日</span><div><h4>《她的第二人生》番外上线</h4><p>补充了女主重返职场后的日常片段，篇幅较短。</p></div></div>
+      <div class="up-item"><span class="up-time">11月2日</span><div><h4>《夜班便利店》特别篇</h4><p>以常客视角展开的短篇，延续原有治愈风格。</p></div></div>
+      <div class="up-item"><span class="up-time">11月1日</span><div><h4>《学长的心事》二搭消息</h4><p>主演组合有新合作动向，剧迷在评论区持续关注。</p></div></div>
+    </div>
+  </section>
+
+  <!-- ============ 分类入口 ============ -->
+  <section class="section" id="cats" aria-labelledby="cats-title">
+    <div class="sec-head">
+      <h2 id="cats-title">泰剧题材分类入口</h2>
+      <span class="sub">按类型找剧，比盲目翻列表更快</span>
+    </div>
+    <div class="cat-grid">
+      <a class="cat-item" href="/#hot"><div class="ico">💗</div><b>甜宠爱情</b><small>轻甜、高糖、节奏快</small></a>
+      <a class="cat-item" href="/#hot"><div class="ico">🌧️</div><b>虐恋情感</b><small>慢热、情绪张力足</small></a>
+      <a class="cat-item" href="/#hot"><div class="ico">🔍</div><b>悬疑推理</b><small>反转、单元案件</small></a>
+      <a class="cat-item" href="/#hot"><div class="ico">🏰</div><b>豪门家族</b><small>继承、权谋、群像</small></a>
+      <a class="cat-item" href="/#hot"><div class="ico">🎓</div><b>校园青春</b><small>成长、友情、初恋</small></a>
+      <a class="cat-item" href="/#hot"><div class="ico">🌈</div><b>BL 剧场</b><small>热门向、演员二搭</small></a>
+      <a class="cat-item" href="/#hot"><div class="ico">🌿</div><b>治愈慢剧</b><small>画面干净、节奏舒缓</small></a>
+      <a class="cat-item" href="/#hot"><div class="ico">💼</div><b>职场现实</b><small>成长线、现实议题</small></a>
+    </div>
+  </section>
+
+  <!-- ============ 深度解析 ============ -->
+  <section class="section" id="deep" aria-labelledby="deep-title">
+    <div class="deep">
+      <h2 id="deep-title">泰剧网深度解析：泰国电视剧为什么越来越多人追</h2>
+      <div class="meta">编辑：林小满 · 2026年11月7日 · 阅读约 6 分钟</div>
+
+      <p>提到<strong>泰剧网</strong>，很多人第一反应是“找剧用的”。但真正让泰剧在中文观众里持续升温的，并不是某一个平台，而是泰国电视剧本身在题材、节奏和演员表达上形成的独特气质。和早期以虐恋、豪门为主的印象相比，现在的泰剧类型跨度已经很大，甜宠、悬疑、校园、BL、治愈慢剧都有稳定受众，这也是<strong>泰剧网</strong>这类专题内容站需要做的第一件事：把类型边界讲清楚。</p>
+
+      <h3>题材特点：从“狗血”到多元</h3>
+      <p>泰国电视剧早年最出圈的标签是豪门恩怨和强冲突情感剧，剧情密度高、人物关系复杂，观众一边吐槽一边追。近几年，泰剧在题材上明显拓宽：校园青春剧更注重群像和成长线，悬疑剧开始尝试单元结构和多线叙事，BL剧在制作水准和演员搭配上越来越成熟，治愈系慢剧则靠画面和氛围吸引观众。对<strong>泰剧网</strong>来说，分类入口不只是为了好看，而是帮助观众按自己的观剧习惯找到合适的类型。</p>
+
+      <h3>内容吸引点：情绪浓度和节奏感</h3>
+      <p>泰剧的节奏和日韩剧不完全一样。很多泰国电视剧单集信息密度高，冲突推进快，适合喜欢“每集都有事发生”的观众；另一部分慢节奏剧则更依赖人物关系和画面氛围，适合下饭或睡前看。<strong>泰剧网</strong>在推荐卡片里标注更新状态和单集进度，就是为了让观众在点开之前对节奏有一个预期，不至于因为“第一集没看进去”而错过一部适合自己的剧。</p>
+
+      <h3>人物与演员：二搭文化和角色讨论</h3>
+      <p>泰国电视剧的演员讨论度很高，尤其是固定搭档的“二搭”现象，会直接影响一部剧的关注度。<strong>泰剧网</strong>的评论区和资讯模块会记录演员合作动向、角色讨论和名场面反馈，这些内容对刚入门的观众很有参考价值——你可以先看看哪对演员的化学反应被讨论得多，再决定从哪部开始补。</p>
+
+      <blockquote>追泰剧最怕的不是剧荒，而是不知道从哪部开始。分类、热度、评论和更新动态放在一起看，判断成本会低很多。</blockquote>
+
+      <h3>适合人群与观看建议</h3>
+      <p>如果你喜欢节奏快、冲突强的剧，可以从豪门家族或悬疑向入手；如果你更在意氛围和画面，治愈慢剧和海边群像题材会更合适；如果你刚接触泰剧，校园青春剧通常门槛较低，单集时长短、主线清晰。<strong>泰剧网</strong>在FAQ和体验指南里会持续补充观看顺序和类型说明，帮助不同阶段的观众找到入口。</p>
+
+      <h3>同类内容比较与搜索意图</h3>
+      <p>搜索“泰剧网”的用户，需求通常集中在三类：一是找剧，想知道最近有什么泰剧值得看；二是确认更新，想了解某部剧更新到第几集；三是了解题材和演员，想判断一部剧是否符合自己的口味。这三类需求对应的是不同的页面模块——热门推荐解决“看什么”，最新更新解决“追到哪”，深度解析和FAQ解决“值不值得看”。把这三件事放在同一页面里，是<strong>泰剧网</strong>作为内容专题页的核心思路。</p>
+    </div>
+  </section>
+
+  <!-- ============ 体验指南 ============ -->
+  <section class="section" id="guide" aria-labelledby="guide-title">
+    <div class="sec-head">
+      <h2 id="guide-title">泰剧网体验指南</h2>
+      <span class="sub">怎么用这个页面更顺手</span>
+    </div>
+    <div class="guide">
+      <div class="guide-item">
+        <div class="num">01 / 找剧</div>
+        <h3>先看分类，再看热度</h3>
+        <p>如果你没有明确目标，先按题材分类扫一遍，再结合热门推荐里的标签和看点描述，通常几分钟内就能圈定两三部待看剧。</p>
+      </div>
+      <div class="guide-item">
+        <div class="num">02 / 追更</div>
+        <h3>用更新动态确认进度</h3>
+        <p>最新更新模块按时间排列，标注了集数和上线时间，方便你确认某部剧是不是已经更新，不用再去多个地方对照。</p>
+      </div>
+      <div class="guide-item">
+        <div class="num">03 / 判断</div>
+        <h3>评论区比简介更直观</h3>
+        <p>剧迷评论里会有节奏、演技、剧情走向的讨论，虽然主观，但对判断“适不适合自己”往往比官方简介更有参考价值。</p>
+      </div>
+      <div class="guide-item">
+        <div class="num">04 / 扩展</div>
+        <h3>顺着同类推荐往下看</h3>
+        <p>每张推荐卡片都带有类型标签，看到喜欢的题材可以顺着同类标签继续浏览，很容易从一部剧扩展到一整类剧。</p>
+      </div>
+      <div class="guide-item">
+        <div class="num">05 / 移动端</div>
+        <h3>手机浏览阅读友好</h3>
+        <p>页面在手机端会自动收拢导航和卡片，正文保持单列阅读，适合通勤或碎片时间翻看，不需要反复缩放。</p>
+      </div>
+      <div class="guide-item">
+        <div class="num">06 / 收藏</div>
+        <h3>收藏后回来看更新</h3>
+        <p>泰剧网会持续补充新剧和更新记录，把页面加入收藏，下一次想找剧或确认进度时可以直接回来查看。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="sec-head">
+      <h2 id="faq-title">泰剧网常见问题</h2>
+      <span class="sub">剧迷最常问的 6 个问题</span>
+    </div>
+    <div class="faq-wrap">
+      <details class="faq" open>
+        <summary>泰剧网主要提供什么内容？</summary>
+        <div class="ans">泰剧网是一个围绕泰国电视剧的内容专题页面，主要提供热门泰剧推荐、最新更新动态、题材分类入口、深度解析、剧迷评论和相关资讯。它不是单纯的剧集列表，而是把“看什么、追到哪、值不值得看”这几件事放在同一个页面里，方便观众快速判断。你可以在热门推荐里找剧，在更新动态里确认进度，在评论和FAQ里了解其他观众的真实反馈。</div>
+      </details>
+      <details class="faq">
+        <summary>刚开始看泰剧，应该从哪部开始？</summary>
+        <div class="ans">如果你是第一次接触泰剧，建议先从单集时长短、主线清晰的校园青春剧或轻甜爱情剧入手，这类剧门槛较低，容易进入状态。如果你更喜欢强冲突和快节奏，可以试试豪门家族或悬疑向的剧。泰剧网的热门推荐卡片里标注了类型标签和简短看点，你可以先挑一部和自己平时观剧习惯接近的，不用一上来就挑战长剧或复杂群像。</div>
+      </details>
+      <details class="faq">
+        <summary>泰剧的更新节奏一般是怎样的？</summary>
+        <div class="ans">泰国电视剧的更新节奏因剧而异，常见的是每周更新一到两集，部分平台剧会一次性放出全集。泰剧网的最新更新模块会标注上线时间和集数，你可以根据更新时间判断一部剧是周更还是已经完结。如果一部剧显示“更新至 EP08”并且时间跨度较长，通常是周更；如果显示“全16集”，则代表已经完结，可以放心连续观看。</div>
+      </details>
+      <details class="faq">
+        <summary>泰剧网里的评分和热度是怎么理解的？</summary>
+        <div class="ans">页面里的评分和热度是编辑综合剧集讨论度、观众反馈和更新活跃度给出的参考值，不是绝对标准。热度偏高通常说明近期讨论较多、更新活跃；评分则更偏向整体口碑。建议结合卡片里的类型标签和看点描述一起看，因为一部剧的评分高低和它是否适合你的口味并不完全对应。评论区里的具体讨论往往比数字更有参考价值。</div>
+      </details>
+      <details class="faq">
+        <summary>泰剧题材分类里的 BL 剧场和校园剧有什么区别？</summary>
+        <div class="ans">BL 剧场是围绕男性角色情感关系展开的剧集类型，校园剧则是以校园环境和学生生活为背景的题材，两者有交集但侧重不同。很多 BL 剧本身就是校园背景，所以分类上会有重叠。泰剧网的分类入口把两者分开，是为了方便观众按偏好筛选：想看情感线为主的可以选 BL 剧场，想看群像成长和校园氛围的可以选校园青春。</div>
+      </details>
+      <details class="faq">
+        <summary>泰剧网会持续更新吗？怎么关注最新动态？</summary>
+        <div class="ans">泰剧网会围绕新剧上线、剧集更新和演员动向持续补充内容，最新更新模块会记录近期动态。你可以把页面加入浏览器收藏，或者记住“泰剧网”这个关键词，下次需要找剧或确认更新进度时直接搜索回来查看。如果你关注某部剧，也可以先看评论区和资讯模块，剧迷讨论通常会第一时间反映更新和剧情变化。</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ 用户评论 ============ -->
+  <section class="section" id="comments" aria-labelledby="comments-title">
+    <div class="sec-head">
+      <h2 id="comments-title">剧迷评论精选</h2>
+      <span class="sub">近 30 天 · 来自追剧观众的讨论</span>
+    </div>
+    <div class="comments">
+
+      <div class="cmt">
+        <div class="cmt-head">
+          <span class="avatar" style="background:#c96f4a">曼</span>
+          <span class="name">曼谷夜风</span>
+          <span class="date">11月6日</span>
+        </div>
+        <p>《曼谷雨季》看到第12集，前面铺垫是有点慢，但这两集情绪一下子上来了。男女主对手戏比想象中好，泰剧网这个更新进度标得挺清楚。</p>
+      </div>
+
+      <div class="cmt">
+        <div class="cmt-head">
+          <span class="avatar" style="background:#7a9b76">清</span>
+          <span class="name">清迈小巴</span>
+          <span class="date">11月6日</span>
+        </div>
+        <p>《清迈来信》全集刷完，节奏是真的慢，但画面太舒服了。适合睡前看，不适合想找强剧情的。评论区有人说无聊，我觉得分人吧。</p>
+      </div>
+
+      <div class="cmt">
+        <div class="cmt-head">
+          <span class="avatar" style="background:#b98a4f">暗</span>
+          <span class="name">暗室观察员</span>
+          <span class="date">11月5日</span>
+        </div>
+        <p>《暗室之光》第8集信息量有点大，旧案线索终于开始收了。前几集确实劝退，但坚持下来还行，悬疑线埋得比我预期认真。</p>
+      </div>
+
+      <div class="cmt">
+        <div class="cmt-head">
+          <span class="avatar" style="background:#8a7ab5">学</span>
+          <span class="name">学长已读不回</span>
+          <span class="date">11月5日</span>
+        </div>
+        <p>《学长的心事》是最近看得最轻松的一部，单集不长，配角也挺有意思。二搭消息如果是真的那我先期待一下。</p>
+      </div>
+
+      <div class="cmt">
+        <div class="cmt-head">
+          <span class="avatar" style="background:#c96f4a">金</span>
+          <span class="name">金链子掉了</span>
+          <span class="date">11月4日</span>
+        </div>
+        <p>家族剧爱好者表示《金链》可以追，人物关系复杂但不乱，前五集已经把继承线铺开了。就是更新有点慢，等得着急。</p>
+      </div>
+
+      <div class="cmt">
+        <div class="cmt-head">
+          <span class="avatar" style="background:#7a9b76">她</span>
+          <span class="name">第二人生重启</span>
+          <span class="date">11月4日</span>
+        </div>
+        <p>《她的第二人生》职场线写得比预想中扎实，女主不是一路开挂那种，有挫折也有成长。番外短是短了点，但补得挺舒服。</p>
+      </div>
+
+      <div class="cmt">
+        <div class="cmt-head">
+          <span class="avatar" style="background:#b98a4f">海</span>
+          <span class="name">海风不眠夜</span>
+          <span class="date">11月3日</span>
+        </div>
+        <p>《海风不眠》配乐加分，民宿群像的设定很讨喜。第10集配角线收得有点仓促，希望后面主线能稳住。</p>
+      </div>
+
+      <div class="cmt">
+        <div class="cmt-head">
+          <span class="avatar" style="background:#8a7ab5">旧</span>
+          <span class="name">旧城迷路</span>
+          <span class="date">11月3日</span>
+        </div>
+        <p>《旧城谜案》单元剧结构对我很友好，两集一个案子不用追太久。主线暗线埋得可以，二刷的时候发现不少细节。</p>
+      </div>
+
+      <div class="cmt">
+        <div class="cmt-head">
+          <span class="avatar" style="background:#c96f4a">花</span>
+          <span class="name">花期还没到</span>
+          <span class="date">11月2日</span>
+        </div>
+        <p>《花期未晚》第6集把过去线补上了，终于理解两人为什么分开。文艺向爱情剧就是这样，喜欢的人很喜欢，不喜欢的人会觉得拖。</p>
+      </div>
+
+      <div class="cmt">
+        <div class="cmt-head">
+          <span class="avatar" style="background:#7a9b76">夜</span>
+          <span class="name">夜班常客</span>
+          <span class="date">11月2日</span>
+        </div>
+        <p>《夜班便利店》特别篇还是原来的味道，每集一个小故事，通勤看刚刚好。这种短篇合集希望多出一点。</p>
+      </div>
+
+      <div class="cmt">
+        <div class="cmt-head">
+          <span class="avatar" style="background:#b98a4f">双</span>
+          <span class="name">双面猜不透</span>
+          <span class="date">11月1日</span>
+        </div>
+        <p>《双面继承人》就是冲着狗血看的，节奏确实快，双胞胎互换的梗虽然老但拍得挺上头。第3集冲突升级，可以继续追。</p>
+      </div>
+
+      <div class="cmt">
+        <div class="cmt-head">
+          <span class="avatar" style="background:#8a7ab5">医</span>
+          <span class="name">医生值班中</span>
+          <span class="date">10月31日</span>
+        </div>
+        <p>《医生说》病例线还行，专业细节不用太较真，人物成长线是重点。群像戏份分配得比较均匀，适合喜欢职场剧的人。</p>
+      </div>
+
+      <div class="cmt">
+        <div class="cmt-head">
+          <span class="avatar" style="background:#c96f4a">t</span>
+          <span class="name">thaifan_2026</span>
+          <span class="date">10月30日</span>
+        </div>
+        <p>从泰剧网的分类入口找剧效率挺高的，按题材筛完再看评论，基本不会踩雷。希望后面能补一些冷门剧。</p>
+      </div>
+
+      <div class="cmt">
+        <div class="cmt-head">
+          <span class="avatar" style="background:#7a9b76">追</span>
+          <span class="name">追更不睡觉</span>
+          <span class="date">10月29日</span>
+        </div>
+        <p>《暗室之光》和《旧城谜案》都追了，个人觉得后者更稳，前者中段有点拖。不过泰剧悬疑整体在进步，值得继续关注。</p>
+      </div>
+
+      <div class="cmt">
+        <div class="cmt-head">
+          <span class="avatar" style="background:#b98a4f">路</span>
+          <span class="name">路人甲看剧</span>
+          <span class="date">10月28日</span>
+        </div>
+        <p>刚开始看泰剧，从校园剧入门的，确实门槛低。泰剧网的入门向推荐对我这种新人挺友好，不会一上来就推复杂群像剧。</p>
+      </div>
+
+      <div class="cmt">
+        <div class="cmt-head">
+          <span class="avatar" style="background:#8a7ab5">评</span>
+          <span class="name">评论区常驻</span>
+          <span class="date">10月27日</span>
+        </div>
+        <p>建议热门推荐里再加一个“近期完结”标签，有时候就想找已经完结的剧一口气看完，不用等更新。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ 相关资讯 ============ -->
+  <section class="section" id="news" aria-labelledby="news-title">
+    <div class="sec-head">
+      <h2 id="news-title">泰剧相关资讯</h2>
+      <span class="sub">新剧、阵容、更新与讨论动态</span>
+    </div>
+    <div class="news-grid">
+
+      <article class="news-card">
+        <div class="date">2026年11月6日</div>
+        <h3>新剧《潮汐之间》官宣主演阵容，都市悬疑题材引关注</h3>
+        <p>该剧定位都市悬疑，主演阵容公开后在剧迷讨论区引发关注，预计下月上线。泰剧网会持续跟进后续物料和上线时间。</p>
+      </article>
+
+      <article class="news-card">
+        <div class="date">2026年11月5日</div>
+        <h3>《清迈来信》全集完结，治愈向泰剧口碑稳定</h3>
+        <p>该剧以慢节奏和干净画面获得一批稳定观众，大结局走温情路线。适合喜欢轻松观剧体验的观众补齐。</p>
+      </article>
+
+      <article class="news-card">
+        <div class="date">2026年11月4日</div>
+        <h3>悬疑泰剧讨论升温，《暗室之光》进入反转密集段</h3>
+        <p>随着旧案线索收束，该剧讨论度明显上升。观众对前段节奏评价不一，但中后段反转获得较多正面反馈。</p>
+      </article>
+
+      <article class="news-card">
+        <div class="date">2026年11月3日</div>
+        <h3>《学长的心事》主演组合传出新合作动向</h3>
+        <p>剧集完结后演员二搭消息在评论区持续发酵。目前尚无正式确认，泰剧网会关注后续官方信息。</p>
+      </article>
+
+      <article class="news-card">
+        <div class="date">2026年11月2日</div>
+        <h3>《夜班便利店》推出特别篇，延续短篇治愈风格</h3>
+        <p>特别篇以常客视角展开，单集时长延续短篇设定。适合通勤或碎片时间观看，对新人观众也比较友好。</p>
+      </article>
+
+      <article class="news-card">
+        <div class="date">2026年11月1日</div>
+        <h3>泰剧题材观察：家族剧与悬疑剧近期讨论度靠前</h3>
+        <p>从近期更新动态和评论区讨论看，家族群像与悬疑推理两类泰剧保持较高关注度，校园和治愈向则保持稳定受众。</p>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="/#top" class="logo" style="color:#fff">
+          <span class="logo-mark">泰</span>
+          <span>泰剧网<small style="color:#a99d91">THAI DRAMA HUB</small></span>
+        </a>
+        <p>泰剧网是围绕泰国电视剧的内容专题站，提供热门泰剧推荐、最新更新动态、题材分类、深度解析与剧迷讨论，帮助观众更高效地找剧、追剧、判断内容是否适合自己。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <a href="/#hot">热门推荐</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#cats">题材分类</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+      </div>
+      <div>
+        <h4>剧迷入口</h4>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">剧迷评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#about">关于泰剧网</a>
+        <a href="/#top">返回顶部</a>
+      </div>
+      <div>
+        <h4>友情链接</h4>
+        <a href="/#top">泰剧网首页</a>
+        <a href="/#hot">泰剧排行榜</a>
+        <a href="/#latest">泰剧更新日历</a>
+        <a href="/#cats">泰剧类型库</a>
+        <a href="/#news">泰剧资讯速递</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 泰剧网 · 内容专题页 · 仅供剧迷交流参考</span>
+      <span>免责声明：本页内容为编辑整理与观众讨论汇总，不提供剧集存储与在线播放，相关版权归原平台与制作方所有。</span>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+        </html>
