@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日大赛在线观看每日大赛-赛事直播回放与赛程表_每日大赛参赛攻略与积分榜</title>
+<meta name="description" content="每日大赛在线观看每日大赛专题页，汇总每日大赛赛程表、直播回放、积分榜与参赛攻略，涵盖赛制规则、选手看点、赛事资讯与观赛指南，帮助你在一个页面内看懂每日大赛，随时找到当日赛事入口与复盘内容。">
+<meta name="keywords" content="每日大赛在线观看每日大赛,每日大赛赛程,每日大赛直播回放,每日大赛积分榜,每日大赛参赛攻略">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b2a4a'/%3E%3Cpath d='M20 18h24v8H28v6h14v8H28v12h-8z' fill='%23ffc94d'/%3E%3C/svg%3E">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --ink:#141b2b;
+  --ink-2:#2c3852;
+  --muted:#6b7891;
+  --line:#e3e8f2;
+  --bg:#f5f7fc;
+  --card:#ffffff;
+  --brand:#1b2a4a;
+  --brand-2:#2f4b86;
+  --accent:#ffc94d;
+  --accent-2:#ff7a45;
+  --teal:#1fa9a0;
+  --radius:14px;
+  --shadow:0 6px 18px rgba(20,27,43,.07);
+  --shadow-hover:0 12px 26px rgba(20,27,43,.12);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:15.5px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 18px}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 12px}
+section{scroll-margin-top:78px}
+
+/* 顶部导航 */
+.site-head{
+  position:sticky;top:0;z-index:50;
+  background:rgba(27,42,74,.97);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.head-inner{display:flex;align-items:center;gap:22px;height:64px}
+.logo{display:flex;align-items:center;gap:9px;color:#fff;font-weight:800;font-size:17px;letter-spacing:.5px;white-space:nowrap}
+.logo .mark{
+  width:30px;height:30px;border-radius:9px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#1b2a4a;display:grid;place-items:center;font-size:15px;font-weight:900;
+}
+.nav-links{display:flex;gap:4px;flex:1;overflow:hidden}
+.nav-links a{
+  color:#c7d2e8;font-size:14px;padding:7px 11px;border-radius:9px;white-space:nowrap;
+  transition:.2s;
+}
+.nav-links a:hover{background:rgba(255,255,255,.1);color:#fff}
+.head-cta{
+  background:var(--accent);color:#1b2a4a;font-weight:700;font-size:13.5px;
+  padding:8px 16px;border-radius:999px;white-space:nowrap;
+}
+.head-cta:hover{background:#ffd970}
+
+/* Banner */
+.hero{
+  background:
+    radial-gradient(900px 420px at 82% 0%, rgba(255,201,77,.18), transparent 65%),
+    radial-gradient(700px 380px at 5% 100%, rgba(31,169,160,.22), transparent 60%),
+    linear-gradient(120deg,#16223b 0%,#1d2f53 58%,#24395f 100%);
+  color:#fff;
+  padding:52px 0 46px;
+}
+.hero-grid{display:grid;grid-template-columns:1.32fr .78fr;gap:38px;align-items:center}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:7px;
+  background:rgba(255,201,77,.16);border:1px solid rgba(255,201,77,.4);
+  color:#ffd97a;font-size:12.5px;padding:5px 12px;border-radius:999px;margin-bottom:16px;
+}
+.hero-tag i{width:6px;height:6px;border-radius:50%;background:#ffd97a;display:block}
+.hero h1{font-size:31px;line-height:1.4;letter-spacing:.3px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero-sub{margin-top:14px;color:#c3d0e6;font-size:14.8px;max-width:620px}
+.hero-search{
+  display:flex;gap:8px;margin-top:22px;max-width:540px;
+  background:#fff;border-radius:12px;padding:6px;
+}
+.hero-search input{
+  flex:1;border:0;outline:0;padding:9px 12px;font-size:14.5px;color:var(--ink);
+  background:transparent;font-family:inherit;
+}
+.hero-search button{
+  border:0;cursor:pointer;background:var(--brand-2);color:#fff;font-weight:700;
+  padding:9px 20px;border-radius:9px;font-size:14px;font-family:inherit;
+}
+.hero-search button:hover{background:#3b5da5}
+.hero-btns{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.hero-btns a{
+  font-size:13.2px;padding:7px 14px;border-radius:999px;
+  background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);color:#dbe5f5;
+  transition:.2s;
+}
+.hero-btns a:hover{background:rgba(255,201,77,.2);border-color:rgba(255,201,77,.5);color:#ffe3a3}
+.hero-side{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:16px;padding:20px;
+}
+.hero-side h3{font-size:14px;color:#ffd97a;margin-bottom:12px;letter-spacing:.6px}
+.side-row{
+  display:flex;justify-content:space-between;gap:10px;
+  padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.13);font-size:13.4px;color:#c9d5e9;
+}
+.side-row:last-child{border-bottom:0}
+.side-row b{color:#fff;font-weight:600}
+.side-row span{color:#8fa3c4;font-size:12.6px;white-space:nowrap}
+
+/* 通用 section */
+.sec{padding:44px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+.sec-head h2{font-size:22.5px;letter-spacing:.4px;position:relative;padding-left:14px}
+.sec-head h2::before{
+  content:"";position:absolute;left:0;top:6px;bottom:6px;width:5px;border-radius:3px;
+  background:linear-gradient(180deg,var(--accent),var(--accent-2));
+}
+.sec-head p{color:var(--muted);font-size:13.6px;margin:6px 0 0}
+.sec-more{font-size:13.5px;color:var(--brand-2);font-weight:600;white-space:nowrap}
+.sec-more:hover{color:var(--accent-2)}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.cat-item{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 15px;box-shadow:var(--shadow);transition:.22s;
+  display:flex;flex-direction:column;gap:5px;
+}
+.cat-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);border-color:#cfd9ec}
+.cat-item b{font-size:14.6px}
+.cat-item span{font-size:12.6px;color:var(--muted);line-height:1.6}
+.cat-item .num{font-size:11.5px;color:var(--teal);font-weight:700;letter-spacing:.5px}
+
+/* 卡片网格 */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.m-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;box-shadow:var(--shadow);transition:.22s;display:flex;flex-direction:column;
+}
+.m-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+.m-cover{
+  height:96px;position:relative;display:flex;align-items:flex-end;padding:10px 13px;
+  color:#fff;font-size:12px;letter-spacing:.5px;
+}
+.m-cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.42))}
+.m-cover span{position:relative;z-index:1;font-weight:600}
+.cv1{background:linear-gradient(135deg,#2f4b86,#1b2a4a)}
+.cv2{background:linear-gradient(135deg,#ff7a45,#c94b1d)}
+.cv3{background:linear-gradient(135deg,#1fa9a0,#0f6b68)}
+.cv4{background:linear-gradient(135deg,#6b5bd6,#3b2f8f)}
+.cv5{background:linear-gradient(135deg,#e0a72c,#a5731a)}
+.cv6{background:linear-gradient(135deg,#3d7ec4,#1c4a80)}
+.m-body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:8px;flex:1}
+.m-body h3{font-size:15.4px}
+.m-tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{
+  font-size:11.5px;padding:2.5px 8px;border-radius:6px;
+  background:#eef2fa;color:#41547a;white-space:nowrap;
+}
+.tag.hot{background:#fff2e2;color:#c1601a}
+.tag.new{background:#e6f7f4;color:#137a72}
+.m-desc{font-size:13.2px;color:#55637d;line-height:1.7;flex:1}
+.m-meta{display:flex;justify-content:space-between;font-size:12.2px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+.m-meta b{color:var(--accent-2);font-weight:700}
+
+/* 最新更新列表 */
+.up-list{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.up-row{
+  display:grid;grid-template-columns:88px 1fr 108px 92px;gap:14px;align-items:center;
+  padding:13px 18px;border-bottom:1px solid var(--line);font-size:13.6px;transition:.18s;
+}
+.up-row:last-child{border-bottom:0}
+.up-row:hover{background:#f7faff}
+.up-row .t{font-size:12.4px;color:var(--muted);font-variant-numeric:tabular-nums}
+.up-row .n{font-weight:600;color:var(--ink-2)}
+.up-row .n small{display:block;font-weight:400;color:var(--muted);font-size:12.5px;margin-top:2px}
+.up-row .s{font-size:12.4px;color:var(--teal);font-weight:600}
+.up-row .b{font-size:12.2px;text-align:right;color:var(--muted)}
+
+/* 深度正文 */
+.article-box{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:30px 32px;
+}
+.article-box h3{font-size:17px;margin:24px 0 10px;color:var(--brand)}
+.article-box h3:first-child{margin-top:0}
+.article-box p{font-size:14.8px;color:#3a465c;line-height:1.92;text-align:justify}
+.article-box strong{color:var(--brand-2)}
+.quote{
+  border-left:4px solid var(--accent);background:#fffbf0;border-radius:0 10px 10px 0;
+  padding:13px 18px;font-size:14px;color:#5b4a1f;margin:16px 0;
+}
+.two-col{display:grid;grid-template-columns:1.55fr .95fr;gap:20px;align-items:start}
+
+/* 侧栏 */
+.side-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:18px 18px 20px;margin-bottom:16px;
+}
+.side-card h3{font-size:15px;margin-bottom:12px;color:var(--brand)}
+.rank-row{display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.4px}
+.rank-row:last-child{border-bottom:0}
+.rank-row .rk{
+  width:20px;height:20px;border-radius:6px;background:#eef2fa;color:#41547a;
+  display:grid;place-items:center;font-size:11.5px;font-weight:800;flex:0 0 auto;
+}
+.rank-row .rk.top{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#3a2400}
+.rank-row .nm{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rank-row .vl{font-size:12.2px;color:var(--accent-2);font-weight:700}
+
+/* 体验指南 */
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.guide{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px;box-shadow:var(--shadow);transition:.22s;
+}
+.guide:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.guide .ic{
+  width:34px;height:34px;border-radius:10px;display:grid;place-items:center;
+  background:#eef2fa;color:var(--brand-2);font-weight:900;font-size:14px;margin-bottom:10px;
+}
+.guide h3{font-size:14.8px;margin-bottom:6px}
+.guide p{font-size:13.2px;color:#55637d;margin:0}
+
+/* FAQ */
+.faq-list{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.faq-item{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 18px;box-shadow:var(--shadow);
+}
+.faq-item h3{font-size:14.6px;color:var(--brand);margin-bottom:7px;display:flex;gap:8px}
+.faq-item h3 i{font-style:normal;color:var(--accent-2);font-weight:900}
+.faq-item p{font-size:13.4px;color:#4a5872;margin:0;line-height:1.8}
+
+/* 评论 */
+.cm-list{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.cm{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 16px;box-shadow:var(--shadow);
+}
+.cm-top{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.av{
+  width:30px;height:30px;border-radius:50%;display:grid;place-items:center;
+  font-size:12.5px;font-weight:800;color:#fff;flex:0 0 auto;
+}
+.cm-top b{font-size:13.4px;color:var(--ink-2)}
+.cm-top .tm{font-size:11.8px;color:var(--muted);margin-left:auto}
+.cm p{font-size:13.3px;color:#4a5872;margin:0;line-height:1.78}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.news{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:17px 18px;box-shadow:var(--shadow);transition:.22s;
+  display:flex;flex-direction:column;gap:7px;
+}
+.news:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.news .dt{font-size:12px;color:var(--teal);font-weight:700;letter-spacing:.4px}
+.news h3{font-size:14.8px;line-height:1.55}
+.news p{font-size:13.1px;color:#55637d;margin:0}
+
+/* 订阅 */
+.subscribe{
+  background:linear-gradient(120deg,#1b2a4a,#2f4b86);
+  border-radius:18px;padding:32px 34px;color:#fff;
+  display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap;
+}
+.subscribe h2{font-size:20px;margin-bottom:6px}
+.subscribe p{color:#c3d0e6;font-size:13.6px;margin:0;max-width:560px}
+.sub-btn{
+  background:var(--accent);color:#1b2a4a;font-weight:800;font-size:14px;
+  padding:11px 26px;border-radius:999px;white-space:nowrap;
+}
+.sub-btn:hover{background:#ffd970}
+
+/* 页脚 */
+.site-foot{background:#101827;color:#8b9ab5;padding:40px 0 26px;margin-top:44px;font-size:13.2px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px;margin-bottom:26px}
+.foot-grid h4{color:#fff;font-size:14px;margin-bottom:10px}
+.foot-grid a{display:block;padding:3px 0;color:#8b9ab5}
+.foot-grid a:hover{color:var(--accent)}
+.foot-note{border-top:1px solid rgba(255,255,255,.08);padding-top:18px;font-size:12.4px;line-height:1.85;color:#6d7c96}
+.foot-note b{color:#a9b8d1}
+
+@media(max-width:980px){
+  .hero-grid,.two-col{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .card-grid,.guide-grid,.news-grid{grid-template-columns:repeat(2,1fr)}
+  .faq-list,.cm-list{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+}
+@media(max-width:640px){
+  body{font-size:15px}
+  .hero{padding:34px 0 30px}
+  .hero h1{font-size:23px}
+  .cat-grid,.card-grid,.guide-grid,.news-grid{grid-template-columns:1fr}
+  .up-row{grid-template-columns:1fr 1fr;gap:6px 12px}
+  .up-row .b{text-align:left}
+  .article-box{padding:22px 18px}
+  .sec{padding:32px 0}
+  .foot-grid{grid-template-columns:1fr}
+  .subscribe{padding:24px 20px}
+}
+</style>
+</head>
+<body>
+
+<!-- 顶部导航 -->
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="logo" href="/#sect-header">
+      <span class="mark">大</span>
+      每日大赛在线观看每日大赛
+    </a>
+    <nav class="nav-links">
+      <a href="/#sect-hot">热门赛事</a>
+      <a href="/#sect-latest">最新更新</a>
+      <a href="/#sect-cat">赛事分类</a>
+      <a href="/#sect-deep">深度解析</a>
+      <a href="/#sect-guide">观赛指南</a>
+      <a href="/#sect-faq">常见问答</a>
+      <a href="/#sect-news">赛事资讯</a>
+    </nav>
+    <a class="head-cta" href="/#sect-hot">当日赛事入口</a>
+  </div>
+</header>
+
+<!-- 首屏 Banner -->
+<section class="hero" id="sect-header">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-tag"><i></i>2026 年 11 月 7 日 · 当日赛程已更新</div>
+      <h1>每日大赛在线观看每日大赛：<em>赛程、回放与积分榜一站看全</em></h1>
+      <p class="hero-sub">每天都有新对局，每天都值得复盘。这里把每日大赛的当日赛程、直播回放、积分排名和选手表现整理成清晰入口，通勤路上十分钟也能补完一天的关键赛况。</p>
+      <p class="hero-sub">无论你是刚接触每日大赛的新观众，还是长期追更的老赛迷，都能按分类、按日期、按选手三条路径快速找到想看的内容。</p>
+      <form class="hero-search" onsubmit="return false;">
+        <input type="text" placeholder="搜索选手、赛事日期、项目名称或关键词">
+        <button type="button">搜索</button>
+      </form>
+      <div class="hero-btns">
+        <a href="/#sect-hot">今日热门对局</a>
+        <a href="/#sect-latest">最新赛果</a>
+        <a href="/#sect-cat">赛事分类</a>
+        <a href="/#sect-deep">赛制解析</a>
+        <a href="/#sect-guide">观赛顺序</a>
+        <a href="/#sect-faq">新手问答</a>
+        <a href="/#sect-news">赛事资讯</a>
+        <a href="/#sect-comment">赛迷讨论</a>
+      </div>
+    </div>
+    <aside class="hero-side">
+      <h3>今日数据速览</h3>
+      <div class="side-row"><b>当日场次</b><span>26 场</span></div>
+      <div class="side-row"><b>已完成对局</b><span>18 场</span></div>
+      <div class="side-row"><b>待开赛</b><span>8 场</span></div>
+      <div class="side-row"><b>积分榜更新</b><span>22:40</span></div>
+      <div class="side-row"><b>回放上传</b><span>已上传 15 条</span></div>
+      <div class="side-row"><b>今日最高分</b><span>9.4 / 10</span></div>
+      <div class="side-row"><b>热度峰值</b><span>41.6 万</span></div>
+    </aside>
+  </div>
+</section>
+
+<!-- 内容简介 -->
+<section class="sec" id="sect-intro">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>关于每日大赛在线观看每日大赛</h2>
+        <p>这个页面解决什么问题，适合哪些人看</p>
+      </div>
+      <a class="sec-more" href="/#sect-deep">先看赛制解析 →</a>
+    </div>
+    <div class="article-box">
+      <p><strong>每日大赛在线观看每日大赛</strong>并不是一个单一节目，而是一类“每天固定开赛、逐日累积积分”的赛事形态。它的核心吸引力在于节奏稳定：每天都有新的对局、新的排名变化和新的讨论点，观众不需要一次性投入很长时间，也能持续跟上进度。因此搜索这个词的人，通常有三类需求：一是找当日赛程与开赛时间，二是找已经结束场次的直播回放与精彩片段，三是想看懂积分榜背后的晋级逻辑。</p>
+      <p>本页按照“当日看什么—怎么找—怎么理解”的顺序组织内容。首屏给出当日场次和热度概览，中部把热门对局、最新赛果、赛事分类按卡片与列表两种形式铺开，后部则提供赛制深度解析、观赛顺序建议、常见问题与赛迷评论。这样无论你是想临时补一场，还是打算长期追完一个赛季，都能找到对应的落点。</p>
+      <p>适合人群上，页面重点照顾三类观众：刚入门、需要先弄懂规则的新人；只关心特定选手或特定项目的垂直观众；以及喜欢看复盘、数据和排名变化的分析型观众。每日大赛的魅力很大程度来自“连续性”，所以本页把更新时间和积分变化放在显眼位置，方便你判断今天值不值得花时间补。</p>
+      <p>值得收藏的原因也很直接：每日大赛的赛程每天都在变，单篇文章很难覆盖全部动态，而一个结构清晰的专题页可以把入口固定下来。你只需要记住这个页面，每天打开就能看到当日赛程、最新赛果和积分榜的集中呈现，省去在多个平台之间来回切换的时间。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 热门内容推荐 -->
+<section class="sec" id="sect-hot">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>热门对局与看点推荐</h2>
+        <p>按当前热度与讨论度排序，适合优先补看</p>
+      </div>
+      <a class="sec-more" href="/#sect-latest">看全部赛果 →</a>
+    </div>
+    <div class="card-grid">
+
+      <article class="m-card">
+        <div class="m-cover cv1"><span>每日大赛 · 焦点战</span></div>
+        <div class="m-body">
+          <h3>东区头名之争：第三局逆转局</h3>
+          <div class="m-tags"><span class="tag hot">焦点战</span><span class="tag">逆转</span><span class="tag">积分关键</span></div>
+          <p class="m-desc">前两局双方各取一分，第三局在落后 7 分的情况下完成翻盘，直接影响东区头名归属，复盘价值很高。</p>
+          <div class="m-meta"><span>热度 <b>41.6万</b></span><span>已结束 · 可回看</span></div>
+        </div>
+      </article>
+
+      <article class="m-card">
+        <div class="m-cover cv2"><span>每日大赛 · 新人首秀</span></div>
+        <div class="m-body">
+          <h3>新面孔登场：首日三连胜</h3>
+          <div class="m-tags"><span class="tag new">新选手</span><span class="tag">首秀</span><span class="tag">节奏快</span></div>
+          <p class="m-desc">第一次进入每日大赛正赛就连下三城，打法偏激进，前中期压制力强，是近期最值得关注的生面孔之一。</p>
+          <div class="m-meta"><span>热度 <b>28.3万</b></span><span>今日 20:00 复赛</span></div>
+        </div>
+      </article>
+
+      <article class="m-card">
+        <div class="m-cover cv3"><span>每日大赛 · 技术流</span></div>
+        <div class="m-body">
+          <h3>防守反击教学局：全程零失误</h3>
+          <div class="m-tags"><span class="tag">技术流</span><span class="tag">零失误</span><span class="tag">适合复盘</span></div>
+          <p class="m-desc">整场只出现一次判罚争议，双方在防守端博弈超过二十分钟，被不少老观众称为本赛季最“干净”的一局。</p>
+          <div class="m-meta"><span>热度 <b>24.9万</b></span><span>回放已上线</span></div>
+        </div>
+      </article>
+
+      <article class="m-card">
+        <div class="m-cover cv4"><span>每日大赛 · 强强对话</span></div>
+        <div class="m-body">
+          <h3>老对手再遇：决胜局一分之差</h3>
+          <div class="m-tags"><span class="tag hot">宿敌</span><span class="tag">决胜局</span><span class="tag">高关注</span></div>
+          <p class="m-desc">两队近三年第七次在每日大赛相遇，最终以一分之差收场，赛后双方选手互相致意，讨论区热度居高不下。</p>
+          <div class="m-meta"><span>热度 <b>37.2万</b></span><span>已结束 · 可回看</span></div>
+        </div>
+      </article>
+
+      <article class="m-card">
+        <div class="m-cover cv5"><span>每日大赛 · 积分卡位</span></div>
+        <div class="m-body">
+          <h3>保级生死战：末轮抢分成功</h3>
+          <div class="m-tags"><span class="tag">保级</span><span class="tag">末轮</span><span class="tag">悬念</span></div>
+          <p class="m-desc">赛前排名倒数第二，凭借末轮两场连胜完成反超，积分榜中下游的争夺比想象中更激烈。</p>
+          <div class="m-meta"><span>热度 <b>19.8万</b></span><span>回放可看</span></div>
+        </div>
+      </article>
+
+      <article class="m-card">
+        <div class="m-cover cv6"><span>每日大赛 · 数据向</span></div>
+        <div class="m-body">
+          <h3>本周效率榜：三项数据全面领先</h3>
+          <div class="m-tags"><span class="tag">数据</span><span class="tag">效率榜</span><span class="tag">周总结</span></div>
+          <p class="m-desc">把本周所有对局的关键数据拉通对比，发现榜首选手在转化效率上领先第二名近两个身位，值得细看。</p>
+          <div class="m-meta"><span>热度 <b>16.4万</b></span><span>周日更新</span></div>
+        </div>
+      </article>
+
+      <article class="m-card">
+        <div class="m-cover cv1"><span>每日大赛 · 名场面</span></div>
+        <div class="m-body">
+          <h3>十佳操作：第 4 位的极限处理</h3>
+          <div class="m-tags"><span class="tag">名场面</span><span class="tag">十佳</span><span class="tag">剪辑</span></div>
+          <p class="m-desc">每日大赛官方十佳操作合集更新，第 4 位那次三线同时处理被大量观众反复回看，评论区讨论集中。</p>
+          <div class="m-meta"><span>热度 <b>22.1万</b></span><span>每日更新</span></div>
+        </div>
+      </article>
+
+      <article class="m-card">
+        <div class="m-cover cv3"><span>每日大赛 · 冷门黑马</span></div>
+        <div class="m-body">
+          <h3>黑马队伍三连胜冲进前六</h3>
+          <div class="m-tags"><span class="tag new">黑马</span><span class="tag">连胜</span><span class="tag">排名上升</span></div>
+          <p class="m-desc">赛季初并不被看好的队伍，靠稳定发挥连续拿下三场，积分排名从第十二一路冲到第六。</p>
+          <div class="m-meta"><span>热度 <b>18.6万</b></span><span>明日再战</span></div>
+        </div>
+      </article>
+
+      <article class="m-card">
+        <div class="m-cover cv4"><span>每日大赛 · 规则争议</span></div>
+        <div class="m-body">
+          <h3>一次判罚引发的规则讨论</h3>
+          <div class="m-tags"><span class="tag">规则</span><span class="tag">判罚</span><span class="tag">讨论</span></div>
+          <p class="m-desc">围绕一次边界判定，观众与解说给出了不同解读，本页在常见问答里整理了官方判罚口径供参考。</p>
+          <div class="m-meta"><span>热度 <b>15.3万</b></span><span>已更新说明</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 最新更新 -->
+<section class="sec" id="sect-latest">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>最新赛果与更新动态</h2>
+        <p>2026 年 11 月 7 日当日更新，按时间倒序</p>
+      </div>
+      <a class="sec-more" href="/#sect-news">查看赛事资讯 →</a>
+    </div>
+    <div class="up-list">
+      <div class="up-row"><div class="t">22:40</div><div class="n">东区焦点战 第三局<small>逆转局回放已上传，附带关键节点标记</small></div><div class="s">已结束</div><div class="b">回放可看</div></div>
+      <div class="up-row"><div class="t">21:55</div><div class="n">积分榜第 27 轮更新<small>前六名位次出现两处变动</small></div><div class="s">数据更新</div><div class="b">已同步</div></div>
+      <div class="up-row"><div class="t">21:20</div><div class="n">保级组末轮第二场<small>末轮抢分成功，排名反超一位</small></div><div class="s">已结束</div><div class="b">回放可看</div></div>
+      <div class="up-row"><div class="t">20:48</div><div class="n">新人选手复赛预告<small>今晚 20:00 已开赛，第二局进行中</small></div><div class="s">进行中</div><div class="b">直播入口</div></div>
+      <div class="up-row"><div class="t">19:30</div><div class="n">黑马队伍第三场<small>三连胜达成，冲进积分榜前六</small></div><div class="s">已结束</div><div class="b">战报已出</div></div>
+      <div class="up-row"><div class="t">18:05</div><div class="n">十佳操作合集第 41 期<small>本期收录 10 个高光片段，含慢放解析</small></div><div class="s">已更新</div><div class="b">视频可看</div></div>
+      <div class="up-row"><div class="t">16:40</div><div class="n">技术流教学局<small>全程零失误对局，解说逐段拆解</small></div><div class="s">已结束</div><div class="b">回放可看</div></div>
+      <div class="up-row"><div class="t">15:10</div><div class="n">规则说明补充公告<small>针对边界判定给出统一解释</small></div><div class="s">公告</div><div class="b">已发布</div></div>
+      <div class="up-row"><div class="t">13:25</div><div class="n">效率榜周中版本<small>三项关键数据对比，榜首优势明显</small></div><div class="s">数据更新</div><div class="b">已同步</div></div>
+      <div class="up-row"><div class="t">11:00</div><div class="n">当日赛程全量发布<small>共 26 场，含 8 场待开赛</small></div><div class="s">赛程</div><div class="b">可查看</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 分类入口 -->
+<section class="sec" id="sect-cat">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>赛事分类入口</h2>
+        <p>按项目、赛段、关注点划分，快速定位想看的内容</p>
+      </div>
+      <a class="sec-more" href="/#sect-guide">不知道从哪看？→</a>
+    </div>
+    <div class="cat-grid">
+      <a class="cat-item" href="/#sect-hot"><span class="num">01</span><b>焦点对局</b><span>当日热度最高、讨论最集中的几场，适合优先补看。</span></a>
+      <a class="cat-item" href="/#sect-latest"><span class="num">02</span><b>完整赛程</b><span>按时间排列的当日与未来三日场次，含开赛时间。</span></a>
+      <a class="cat-item" href="/#sect-deep"><span class="num">03</span><b>赛制与规则</b><span>积分如何计算、晋级线在哪，一次讲清楚。</span></a>
+      <a class="cat-item" href="/#sect-guide"><span class="num">04</span><b>直播回放</b><span>已结束场次的完整回放与精彩片段合集。</span></a>
+      <a class="cat-item" href="/#sect-hot"><span class="num">05</span><b>选手表现</b><span>个人数据、状态起伏与近期对局质量评估。</span></a>
+      <a class="cat-item" href="/#sect-latest"><span class="num">06</span><b>积分排名</b><span>每日更新的总榜与分组榜，含位次变化。</span></a>
+      <a class="cat-item" href="/#sect-news"><span class="num">07</span><b>赛事资讯</b><span>公告、调整、选手动态与赛季节点提醒。</span></a>
+      <a class="cat-item" href="/#sect-faq"><span class="num">08</span><b>新手答疑</b><span>第一次看每日大赛最容易卡住的六个问题。</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 深度解析 -->
+<section class="sec" id="sect-deep">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>深度解析：每日大赛为什么值得每天追</h2>
+        <p>赛制、看点、节奏与人群适配的完整拆解</p>
+      </div>
+      <a class="sec-more" href="/#sect-faq">看常见问题 →</a>
+    </div>
+    <div class="two-col">
+      <div class="article-box">
+        <h3>一、赛制形态：连续性才是核心</h3>
+        <p>每日大赛最不同于杯赛的地方，是它用“每天开赛”替代了“集中办赛”。杯赛的悬念集中在几天内爆发，而<strong>每日大赛在线观看每日大赛</strong>的悬念是被拉长到整个赛季的：今天的胜负会改变明天的对阵强度，明天的结果又会影响后天的晋级形势。观众追的不是一场比赛，而是一条持续变化的排名曲线。理解了这一点，就能明白为什么很多人每天只花十几分钟，却愿意坚持看完整季。</p>
+        <p>积分通常由胜场、对手强度和小分共同决定，因此“赢弱队”和“赢强队”的含金量并不相同。这也是为什么有些队伍胜率不低却排在中游，而有些队伍场次更少却稳居前列。看每日大赛时，先看积分规则再看比赛，会比只看比分更有效率。</p>
+
+        <h3>二、内容吸引点：三个层次的信息密度</h3>
+        <p>第一层是结果层，谁赢谁输、比分多少，这部分最容易获取，也最容易过期。第二层是过程层，关键局的转折点在哪、哪一次处理改变了走势，这一层是回放和解说的价值所在。第三层是趋势层，某个选手的状态是否在回升、某支队伍的战术是否被针对，这一层只有连续看多日才能体会。</p>
+        <div class="quote">建议的观看顺序是：先看当日赛果列表 → 挑一到两场焦点局看回放 → 最后看积分榜变化。这样既不会漏掉关键信息，也不至于在无关场次上消耗太多时间。</div>
+
+        <h3>三、选手与队伍：如何判断真实水平</h3>
+        <p>单场数据容易被误读。一场高分可能来自对手失误，也可能来自顺风局的放大效应。更可靠的判断方式是看“稳定性”和“逆风处理”：连续五场以上保持接近的数据，说明基本盘扎实；落后局面下能否把差距缩小，说明心理与临场调整能力。每日大赛每天都有新样本，恰好适合用这种方式做长期观察。</p>
+        <p>新人观众常犯的错误是只看胜率。实际上，赛程强度差异很大，早期连胜的含金量需要结合对手排名来看。本页在热门对局卡片中标注了“焦点战”“黑马”“保级”等标签，就是为了让这类判断更直观一些。</p>
+
+        <h3>四、节奏与消费体验：为什么适合碎片时间</h3>
+        <p>每日大赛的单场时长通常控制在可接受范围内，加上每天固定开赛，天然适合通勤、午休、睡前这类碎片时间。你不需要像追长剧那样连续投入，也不会因为错过一天就完全脱节——第二天的积分榜会把前一天的信息压缩呈现。对于时间有限但想保持关注的观众，这是相对友好的内容形态。</p>
+
+        <h3>五、同类内容比较与适合人群</h3>
+        <p>与集中办赛的杯赛相比，每日大赛少了“大赛氛围”的爆发感，多了“日常陪伴”的稳定感；与纯娱乐向的表演赛相比，它又有真实的排名压力与竞技强度。适合人群因此也很清晰：喜欢看数据变化、愿意长期跟踪、享受“每天一点点”的观众会更容易上头；只想看一锤定音大场面的观众，可能会觉得日常场次偏平淡。</p>
+        <p>最后回到搜索意图。<strong>每日大赛在线观看每日大赛</strong>这个词背后，多数人真正想解决的是“今天有什么值得看”和“昨天的结果怎么理解”这两个问题。本页的结构正是围绕这两点组织的：上方给当日入口，中部给回放与赛果，下方给规则与讨论。把页面收藏下来，每天打开就能完成一次完整的赛况补课。</p>
+      </div>
+
+      <aside>
+        <div class="side-card">
+          <h3>积分榜速览（第 27 轮）</h3>
+          <div class="rank-row"><span class="rk top">1</span><span class="nm">东区 · 长风队</span><span class="vl">62 分</span></div>
+          <div class="rank-row"><span class="rk top">2</span><span class="nm">南区 · 星野队</span><span class="vl">59 分</span></div>
+          <div class="rank-row"><span class="rk top">3</span><span class="nm">西区 · 铁壁队</span><span class="vl">57 分</span></div>
+          <div class="rank-row"><span class="rk">4</span><span class="nm">北区 · 疾风队</span><span class="vl">53 分</span></div>
+          <div class="rank-row"><span class="rk">5</span><span class="nm">东区 · 青岚队</span><span class="vl">51 分</span></div>
+          <div class="rank-row"><span class="rk">6</span><span class="nm">南区 · 黑马队</span><span class="vl">49 分</span></div>
+          <div class="rank-row"><span class="rk">7</span><span class="nm">西区 · 磐石队</span><span class="vl">46 分</span></div>
+          <div class="rank-row"><span class="rk">8</span><span class="nm">北区 · 逐光队</span><span class="vl">44 分</span></div>
+        </div>
+        <div class="side-card">
+          <h3>今日值得关注的三个时间点</h3>
+          <div class="rank-row"><span class="rk">A</span><span class="nm">20:00 新人复赛</span><span class="vl">进行中</span></div>
+          <div class="rank-row"><span class="rk">B</span><span class="nm">21:30 焦点战第二场</span><span class="vl">待开赛</span></div>
+          <div class="rank-row"><span class="rk">C</span><span class="nm">22:40 积分榜结算</span><span class="vl">已更新</span></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 体验指南 -->
+<section class="sec" id="sect-guide">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>观赛与浏览体验指南</h2>
+        <p>怎么用这个页面，效率最高</p>
+      </div>
+      <a class="sec-more" href="/#sect-faq">还有疑问 →</a>
+    </div>
+    <div class="guide-grid">
+      <div class="guide"><div class="ic">01</div><h3>先看当日概览</h3><p>首屏右侧的数据速览能在一分钟内告诉你今天有多少场、还剩几场、积分榜何时更新，适合时间紧张的观众。</p></div>
+      <div class="guide"><div class="ic">02</div><h3>按标签筛重点</h3><p>热门卡片带有“焦点战”“黑马”“保级”等标签，直接跳过普通场次，把时间留给真正有信息量的对局。</p></div>
+      <div class="guide"><div class="ic">03</div><h3>回放优先看转折局</h3><p>一场比赛通常只有一到两个关键局值得完整回看，其余看片段即可，效率会高很多。</p></div>
+      <div class="guide"><div class="ic">04</div><h3>善用列表的更新时间</h3><p>最新赛果按时间倒序排列，时间戳能帮你判断哪些内容是新出的，避免重复补看。</p></div>
+      <div class="guide"><div class="ic">05</div><h3>移动端阅读友好</h3><p>页面在手机端会自动收窄为单列布局，卡片与列表都能正常阅读，通勤路上打开也不费劲。</p></div>
+      <div class="guide"><div class="ic">06</div><h3>收藏后每日复访</h3><p>赛程每天变化，单次浏览很难覆盖全季，把页面加入收藏，每天打开一次即可跟上节奏。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="sect-faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>每日大赛常见问题</h2>
+        <p>新手最常卡住的六个问题，逐条回答</p>
+      </div>
+      <a class="sec-more" href="/#sect-comment">看赛迷怎么说 →</a>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3><i>Q1</i>每日大赛每天都有比赛吗？</h3>
+        <p>正常情况下每天都会安排场次，但数量和强度并不固定。工作日通常场次较少、以常规对局为主，周末或赛季关键节点会集中安排焦点战。建议以本页“最新赛果与更新动态”里的当日赛程为准，遇到调整会以公告形式同步。</p>
+      </div>
+      <div class="faq-item">
+        <h3><i>Q2</i>错过直播还能看回放吗？</h3>
+        <p>大部分已结束场次会在结算后陆续上传回放，焦点战通常更快。回放一般包含完整对局和关键节点标记，时间紧张的观众可以直接跳到标记处。少数表演性质或临时调整的场次可能不提供回放，以实际更新为准。</p>
+      </div>
+      <div class="faq-item">
+        <h3><i>Q3</i>积分榜是怎么算的？</h3>
+        <p>积分一般由胜场基础分、对手强度系数和小分共同构成，因此赢强队和赢弱队的分值不同。这也是为什么胜率相近的队伍排名可能相差较大。想看懂排名变化，建议先看本页“深度解析”里的赛制部分，再对照积分榜观察。</p>
+      </div>
+      <div class="faq-item">
+        <h3><i>Q4</i>第一次看应该从哪场开始？</h3>
+        <p>推荐从当日“焦点战”入手，这类对局双方实力接近、信息量大，更容易看出打法和节奏。如果完全不了解规则，可以先看一场技术流或教学向的对局，配合解说更容易入门，再回头补焦点战。</p>
+      </div>
+      <div class="faq-item">
+        <h3><i>Q5</i>每日大赛和杯赛有什么区别？</h3>
+        <p>最大的区别在连续性。杯赛集中在短时间内打完，悬念爆发快；每日大赛拉长到整个赛季，靠每天的排名变化积累看点。前者适合看大场面，后者适合长期跟踪。两者并不冲突，很多观众会同时关注。</p>
+      </div>
+      <div class="faq-item">
+        <h3><i>Q6</i>页面内容多久更新一次？</h3>
+        <p>赛果与积分榜按当日比赛进度更新，通常在晚间结算后完成同步；资讯与公告类内容按发布节奏更新。热门对局和回放入口会在场次结束后补充，建议每天固定时间打开一次，避免遗漏关键变化。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 用户评论 -->
+<section class="sec" id="sect-comment">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>赛迷讨论区</h2>
+        <p>近 30 天内的真实感评论，观点不完全一致</p>
+      </div>
+      <a class="sec-more" href="/#sect-news">看赛事资讯 →</a>
+    </div>
+    <div class="cm-list">
+      <div class="cm"><div class="cm-top"><span class="av" style="background:#2f4b86">林</span><b>林间看台</b><span class="tm">11-06</span></div><p>每天下班第一件事就是打开这个页面看赛果，列表按时间排得很清楚，不用再翻好几个平台了。</p></div>
+      <div class="cm"><div class="cm-top"><span class="av" style="background:#c1601a">阿</span><b>阿野不熬夜</b><span class="tm">11-05</span></div><p>说实话今天的焦点战第三局有点争议，判罚那段回放看了三遍还是觉得边界模糊，希望官方说明能更细一点。</p></div>
+      <div class="cm"><div class="cm-top"><span class="av" style="background:#137a72">小</span><b>小满爱复盘</b><span class="tm">11-05</span></div><p>技术流那场真的值得看，全程几乎没失误，解说拆解也到位，比看一堆高光剪辑有用多了。</p></div>
+      <div class="cm"><div class="cm-top"><span class="av" style="background:#6b5bd6">周</span><b>周三下午茶</b><span class="tm">11-04</span></div><p>新人选手首秀三连胜那段我看了，打法确实激进，但感觉后面会被针对，先观望两轮再说。</p></div>
+      <div class="cm"><div class="cm-top"><span class="av" style="background:#3d7ec4">老</span><b>老观众一枚</b><span class="tm">11-04</span></div><p>追了三年每日大赛，最喜欢的还是积分榜那种每天变一点点的感觉，比杯赛慢慢熬更有味道。</p></div>
+      <div class="cm"><div class="cm-top"><span class="av" style="background:#e0a72c">橙</span><b>橙子汽水</b><span class="tm">11-03</span></div><p>页面排版挺舒服的，手机上也不乱，就是希望热门卡片能再多一点，有时候一场不够看。</p></div>
+      <div class="cm"><div class="cm-top"><span class="av" style="background:#2f4b86">北</span><b>北区小透明</b><span class="tm">11-03</span></div><p>保级组那场末轮抢分太刺激了，赛前倒数第二，末轮两连胜直接反超，这才是每日大赛的魅力。</p></div>
+      <div class="cm"><div class="cm-top"><span class="av" style="background:#c1601a">路</span><b>路过看看</b><span class="tm">11-02</span></div><p>不太懂规则，看了解析才明白为什么胜率高的队排名反而低，原来对手强度也算分，涨知识了。</p></div>
+      <div class="cm"><div class="cm-top"><span class="av" style="background:#137a72">夏</span><b>夏天的风</b><span class="tm">11-02</span></div><p>回放上传速度还行，就是有些场次标记不够准，跳过去还要自己往前拖一点，希望优化下。</p></div>
+      <div class="cm"><div class="cm-top"><span class="av" style="background:#6b5bd6">不</span><b>不吃香菜</b><span class="tm">11-01</span></div><p>黑马那队是真稳，不靠爆冷，一场一场赢下来的，积分冲进前六完全合理。</p></div>
+      <div class="cm"><div class="cm-top"><span class="av" style="background:#3d7ec4">夜</span><b>夜里三点</b><span class="tm">10-31</span></div><p>效率榜数据挺有意思，榜首那位的转化效率确实离谱，但对局质量还得结合对手看，不能只看数字。</p></div>
+      <div class="cm"><div class="cm-top"><span class="av" style="background:#e0a72c">小</span><b>小鹿乱撞</b><span class="tm">10-30</span></div><p>十佳操作第 4 位那个三线处理我反复看了好几遍，确实漂亮，本期合集质量在线。</p></div>
+      <div class="cm"><div class="cm-top"><span class="av" style="background:#2f4b86">追</span><b>追更不停</b><span class="tm">10-29</span></div><p>每天更新节奏很稳，这点很难得。就怕赛季后半段场次变少，希望别出现断更。</p></div>
+      <div class="cm"><div class="cm-top"><span class="av" style="background:#c1601a">简</span><b>简单点</b><span class="tm">10-28</span></div><p>中立说一句，有些日常场次确实偏平淡，不如只看焦点战，时间有限的话建议按标签筛。</p></div>
+      <div class="cm"><div class="cm-top"><span class="av" style="background:#137a72">清</span><b>清晨六点</b><span class="tm">10-27</span></div><p>第一次看每日大赛就是从这个页面入门的，赛制那段写得很清楚，省了不少查资料的时间。</p></div>
+      <div class="cm"><div class="cm-top"><span class="av" style="background:#6b5bd6">阿</span><b>阿吉不emo</b><span class="tm">10-26</span></div><p>宿敌那场一分之差收尾，赛后双方致意那段有点感动，竞技归竞技，风度还在。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 相关资讯 -->
+<section class="sec" id="sect-news">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>赛事资讯与动态</h2>
+        <p>公告、调整、选手动态与赛季节点</p>
+      </div>
+      <a class="sec-more" href="/#sect-latest">回到最新赛果 →</a>
+    </div>
+    <div class="news-grid">
+      <article class="news"><div class="dt">2026-11-07</div><h3>当日赛程全量发布：共 26 场，晚间集中开赛</h3><p>赛程已按时间排序更新，其中 8 场待开赛，焦点战安排在 21:30 之后，建议提前关注入口变化。</p></article>
+      <article class="news"><div class="dt">2026-11-06</div><h3>积分榜第 27 轮更新：前六出现两处位次变动</h3><p>黑马队伍完成三连胜后升至第六，原本第六的队伍下滑一位，中上游竞争进一步收紧。</p></article>
+      <article class="news"><div class="dt">2026-11-05</div><h3>规则说明补充公告：统一边界判定口径</h3><p>针对近期讨论较多的判罚问题，官方给出统一解释，后续场次将按同一标准执行，回放同步保留。</p></article>
+      <article class="news"><div class="dt">2026-11-04</div><h3>新人选手首秀三连胜，复赛时间确定</h3><p>该选手首次进入正赛便连下三城，复赛安排在今日 20:00，打法特点与后续针对性值得观察。</p></article>
+      <article class="news"><div class="dt">2026-11-02</div><h3>十佳操作第 41 期上线，含慢放与逐帧解析</h3><p>本期收录 10 个高光片段，其中第 4 位的三线处理讨论度最高，适合入门观众理解操作逻辑。</p></article>
+      <article class="news"><div class="dt">2026-10-30</div><h3>效率榜周中版本：三项关键数据对比出炉</h3><p>榜首在转化效率上领先明显，但样本量仍需积累，建议结合近五场对手强度综合判断。</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 订阅 -->
+<section class="sec" id="sect-sub">
+  <div class="wrap">
+    <div class="subscribe">
+      <div>
+        <h2>每天一分钟，跟上每日大赛</h2>
+        <p>把页面加入收藏，当日赛程、赛果、积分榜与回放入口会集中呈现，不必再在多个平台之间来回切换。</p>
+      </div>
+      <a class="sub-btn" href="/#sect-header">回到顶部 · 看今日场次</a>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="site-foot" id="sect-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>每日大赛在线观看每日大赛</h4>
+        <p style="color:#8b9ab5;font-size:12.8px;line-height:1.9;margin:0">专注赛事赛程、直播回放、积分排名与观赛攻略的内容专题页，帮助观众用更短时间跟上每天的比赛节奏。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <a href="/#sect-hot">热门对局</a>
+        <a href="/#sect-latest">最新赛果</a>
+        <a href="/#sect-cat">赛事分类</a>
+        <a href="/#sect-deep">深度解析</a>
+      </div>
+      <div>
+        <h4>帮助与说明</h4>
+        <a href="/#sect-guide">观赛指南</a>
+        <a href="/#sect-faq">常见问题</a>
+        <a href="/#sect-comment">赛迷讨论</a>
+        <a href="/#sect-news">赛事资讯</a>
+      </div>
+      <div>
+        <h4>友情链接</h4>
+        <a href="/#sect-header">赛程速览入口</a>
+        <a href="/#sect-hot">焦点战复盘</a>
+        <a href="/#sect-deep">赛制规则说明</a>
+        <a href="/#sect-footer">站点首页</a>
+      </div>
+    </div>
+    <div class="foot-note">
+      <p><b>版权信息：</b>本页面为赛事内容专题整理页面，所涉赛程、比分、排名与选手信息均以实际更新为准，页面内容仅用于信息聚合与观赛参考。</p>
+      <p><b>免责声明：</b>页面中的时间为模拟展示，用于说明内容更新节奏；热门对局、评论与资讯为编辑整理示例，不构成任何形式的赛事结果承诺。请以官方发布信息为准。</p>
+      <p>© 2026 每日大赛在线观看每日大赛 · 内容专题页 · 保留所有权利</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+    </html>
